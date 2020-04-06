@@ -1,0 +1,15 @@
+{
+  "name": "demo-prism",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mock": "prism mock mock-server/root.yml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stoplight/prism-cli": "^3.3.3"
+  }
+}

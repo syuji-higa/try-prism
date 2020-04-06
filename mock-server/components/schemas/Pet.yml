@@ -1,0 +1,36 @@
+required:
+- name
+- photoUrls
+type: object
+properties:
+  id:
+    type: integer
+    format: int64
+  category:
+    $ref: ./Category.yml
+  name:
+    type: string
+    example: doggie
+  photoUrls:
+    type: array
+    xml:
+      name: photoUrl
+      wrapped: true
+    items:
+      type: string
+  tags:
+    type: array
+    xml:
+      name: tag
+      wrapped: true
+    items:
+      $ref: ./Tag.yml
+  status:
+    type: string
+    description: pet status in the store
+    enum:
+    - available
+    - pending
+    - sold
+xml:
+  name: Pet

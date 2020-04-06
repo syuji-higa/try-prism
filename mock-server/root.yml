@@ -1,0 +1,28 @@
+openapi: 3.0.1
+info:
+  title: Mock Server
+  description: Mock Server
+  termsOfService: http://example.com/terms/
+  contact:
+    email: apiteam@example.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+externalDocs:
+  description: Find out more about Swagger
+  url: http://example.com
+servers:
+- url: https://example.com/api/v1
+- url: http://example.com/api/v1
+tags:
+- name: pet
+  description: Everything about your Pets
+  externalDocs:
+    description: Find out more
+    url: http://example.com
+paths:
+  /pet:
+    $ref: ./paths/pet.yml
+  /pet/{petId}:
+    $ref: ./paths/pet-by-id.yml
