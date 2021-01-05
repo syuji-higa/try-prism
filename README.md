@@ -1,13 +1,2 @@
-# API Mock Server Demo by Prism
+- Tried the module: https://github.com/stoplightio/prism
 
-https://github.com/stoplightio/prism
-
-## Command
-
-```sh
-# Install
-npm ci
-
-# Start
-npm run mock
-```
